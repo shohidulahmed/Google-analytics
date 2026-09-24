@@ -2,182 +2,346 @@
 
 <html lang="en">
 
-<head> <meta charset="UTF-8"> <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Analytics Practice Site</title>
+  <title>Stack Burger Co.</title>
 
-<!-- Google Tag Manager -->
+  <!-- Google Tag Manager -->
 
-<script> (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start': new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0], j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src= 'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f); })(window,document,'script','dataLayer','GTM-5FLKMNSN'); </script>
+  <script>
+    (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-5FLKMNSN');
+  </script>
 
-<!-- End Google Tag Manager -->
+  <!-- End Google Tag Manager -->
 
-<style> body { font-family: Arial, sans-serif; max-width: 900px; margin: 0 auto; padding: 30px; line-height: 1.6; } nav { margin-bottom: 30px; padding: 15px; background: #f2f2f2; } nav a { margin-right: 20px; } section { margin: 50px 0; padding: 25px; border: 1px solid #ddd; border-radius: 8px; } .product { border: 1px solid #ccc; padding: 20px; margin: 15px 0; border-radius: 8px; } button { padding: 10px 16px; cursor: pointer; } input, textarea { display: block; width: 100%; max-width: 500px; margin: 10px 0; padding: 10px; box-sizing: border-box; } </style>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 30px;
+      line-height: 1.6;
+      background: #fffaf5;
+    }
+
+    nav {
+      margin-bottom: 30px;
+      padding: 18px;
+      background: #222;
+      border-radius: 8px;
+    }
+
+    nav a {
+      margin-right: 20px;
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    section {
+      margin: 40px 0;
+      padding: 30px;
+      background: white;
+      border: 1px solid #ddd;
+      border-radius: 10px;
+    }
+
+    .hero {
+      text-align: center;
+      padding: 50px 30px;
+    }
+
+    .hero h1 {
+      font-size: 42px;
+      margin-bottom: 10px;
+    }
+
+    .burger {
+      border: 1px solid #ccc;
+      padding: 20px;
+      margin: 15px 0;
+      border-radius: 8px;
+    }
+
+    .price {
+      font-size: 20px;
+      font-weight: bold;
+    }
+
+    button {
+      padding: 10px 16px;
+      cursor: pointer;
+      border: none;
+      border-radius: 5px;
+    }
+
+    input,
+    textarea {
+      display: block;
+      width: 100%;
+      max-width: 500px;
+      margin: 10px 0;
+      padding: 10px;
+      box-sizing: border-box;
+    }
+
+    footer {
+      text-align: center;
+      margin-top: 50px;
+      padding: 30px;
+    }
+  </style>
 
 </head>
 
 <body>
 
-<!-- Google Tag Manager (noscript) -->
+  <!-- Google Tag Manager (noscript) -->
 
-<noscript> <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5FLKMNSN" height="0" width="0" style="display:none;visibility:hidden"> </iframe> </noscript> <!-- End Google Tag Manager (noscript) -->
+  <noscript>
+    <iframe
+      src="https://www.googletagmanager.com/ns.html?id=GTM-5FLKMNSN"
+      height="0"
+      width="0"
+      style="display:none;visibility:hidden">
+    </iframe>
+  </noscript>
+  <!-- End Google Tag Manager (noscript) -->
 
-<!-- Navigation -->
+  <!-- Navigation -->
 
-<nav id="main-navigation">
+  <nav id="main-navigation">
 
+```
 <a href="#home">Home</a>
 
-<a href="#products">Products</a>
+<a href="#menu">Menu</a>
 
-<a href="#resources">Resources</a>
+<a href="#offers">Offers</a>
 
 <a href="#contact">Contact</a>
+```
 
-</nav>
+  </nav>
 
-<!-- HOME -->
+  <!-- HERO -->
 
-<section id="home">
+  <section id="home" class="hero">
 
-<h1>Analytics Practice Site</h1>
+```
+<h1>Stack Burger Co.</h1>
+
+<h2>Big burgers. Big flavour.</h2>
 
 <p>
-  Welcome to my test website for learning Google Analytics 4
-  and Google Tag Manager.
+  Freshly cooked burgers, crispy fries and ice-cold drinks.
+  Made to order and served your way.
 </p>
 
-<button id="contact-btn">
-  Contact Me
+<button id="order-button">
+  Order Now
 </button>
 
 <br><br>
 
-<button id="cta-button">
-  Get Started
+<button id="menu-button">
+  View Our Menu
 </button>
+```
 
-</section>
+  </section>
 
-<!-- EXTERNAL LINKS -->
+  <!-- EXTERNAL LINKS -->
 
-<section id="external-links">
+  <section id="external-links">
 
-<h2>External Links</h2>
+```
+<h2>Find Us Online</h2>
 
 <p>
-  Use these links to practise tracking outbound link clicks.
+  Check out our favourite websites and social channels.
 </p>
 
+<!-- Keep this link for your GTM practice -->
 <a
   id="google-link"
-  href="https://www.google.com">
-  Visit Google
+  href="https://www.google.com"
+  target="_blank">
+  Search for Stack Burger on Google
 </a>
 
 <br><br>
 
 <a
   id="youtube-link"
-  href="https://www.youtube.com">
-  Visit YouTube
+  href="https://www.youtube.com"
+  target="_blank">
+  Watch our videos on YouTube
 </a>
 
 <br><br>
 
 <a
   id="github-link"
-  href="https://github.com">
-  Visit GitHub
-</a>
-
-</section>
-
-<!-- PRODUCTS -->
-
-<section id="products">
-
-<h2>Products</h2>
-
-<p>
-  These are fake products for practising ecommerce-style tracking.
-</p>
-
-
-<div class="product">
-
-  <h3>Google Analytics Course</h3>
-
-  <p>Learn the basics of GA4.</p>
-
-  <p><strong>£49</strong></p>
-
-  <button
-    id="ga-course-button"
-    class="product-button">
-    View Course
-  </button>
-
-  <button
-    id="ga-cart-button"
-    class="add-to-cart">
-    Add to Cart
-  </button>
-
-</div>
-
-
-<div class="product">
-
-  <h3>Google Tag Manager Course</h3>
-
-  <p>Learn how to create tags, triggers and variables.</p>
-
-  <p><strong>£79</strong></p>
-
-  <button
-    id="gtm-course-button"
-    class="product-button">
-    View Course
-  </button>
-
-  <button
-    id="gtm-cart-button"
-    class="add-to-cart">
-    Add to Cart
-  </button>
-
-</div>
-
-</section>
-
-<!-- RESOURCES -->
-
-<section id="resources">
-
-<h2>Resources</h2>
-
-<p>
-  Use this section to practise file-download tracking.
-</p>
-
-<a
-  id="pdf-download"
-  href="https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf"
+  href="https://github.com"
   target="_blank">
-  Download Practice PDF
+  Visit our GitHub
 </a>
+```
 
-</section>
+  </section>
 
-<!-- NEWSLETTER -->
+  <!-- MENU -->
 
-<section id="newsletter">
+  <section id="menu">
 
-<h2>Newsletter</h2>
+```
+<h2>Our Menu</h2>
 
 <p>
-  Practise tracking form submissions.
+  Try one of our customer favourites.
+</p>
+
+
+<div class="burger">
+
+  <h3>Classic Stack Burger</h3>
+
+  <p>
+    Beef patty, cheddar cheese, lettuce, tomato,
+    onion and our signature Stack sauce.
+  </p>
+
+  <p class="price">£9.99</p>
+
+  <button
+    id="classic-view"
+    class="burger-button">
+    View Burger
+  </button>
+
+  <button
+    id="classic-cart"
+    class="add-to-cart">
+    Add to Order
+  </button>
+
+</div>
+
+
+<div class="burger">
+
+  <h3>Double Bacon Stack</h3>
+
+  <p>
+    Two beef patties, crispy bacon, American cheese,
+    pickles and smoky BBQ sauce.
+  </p>
+
+  <p class="price">£12.99</p>
+
+  <button
+    id="bacon-view"
+    class="burger-button">
+    View Burger
+  </button>
+
+  <button
+    id="bacon-cart"
+    class="add-to-cart">
+    Add to Order
+  </button>
+
+</div>
+
+
+<div class="burger">
+
+  <h3>Spicy Chicken Burger</h3>
+
+  <p>
+    Crispy chicken, spicy mayo, lettuce, jalapeños
+    and melted cheese.
+  </p>
+
+  <p class="price">£10.99</p>
+
+  <button
+    id="chicken-view"
+    class="burger-button">
+    View Burger
+  </button>
+
+  <button
+    id="chicken-cart"
+    class="add-to-cart">
+    Add to Order
+  </button>
+
+</div>
+
+
+<div class="burger">
+
+  <h3>Veggie Stack</h3>
+
+  <p>
+    Crispy veggie patty, lettuce, tomato, onion,
+    avocado and house sauce.
+  </p>
+
+  <p class="price">£10.49</p>
+
+  <button
+    id="veggie-view"
+    class="burger-button">
+    View Burger
+  </button>
+
+  <button
+    id="veggie-cart"
+    class="add-to-cart">
+    Add to Order
+  </button>
+
+</div>
+```
+
+  </section>
+
+  <!-- OFFERS -->
+
+  <section id="offers">
+
+```
+<h2>Today's Offers</h2>
+
+<p>
+  Get a burger, fries and a drink for just £14.99.
+</p>
+
+<button id="offer-button">
+  Claim This Offer
+</button>
+```
+
+  </section>
+
+  <!-- NEWSLETTER -->
+
+  <section id="newsletter">
+
+```
+<h2>Get Burger News</h2>
+
+<p>
+  Sign up for new menu announcements and special offers.
 </p>
 
 <form id="newsletter-form">
@@ -199,14 +363,20 @@
   </button>
 
 </form>
+```
 
-</section>
+  </section>
 
-<!-- CONTACT FORM -->
+  <!-- CONTACT -->
 
-<section id="contact">
+  <section id="contact">
 
-<h2>Contact Me</h2>
+```
+<h2>Contact Us</h2>
+
+<p>
+  Have a question about our menu? Send us a message.
+</p>
 
 <form id="contact-form">
 
@@ -250,97 +420,156 @@
   </button>
 
 </form>
+```
 
-</section>
+  </section>
 
-<!-- LONG ARTICLE -->
+  <!-- RESTAURANT STORY -->
 
-<section id="article">
+  <section id="about">
 
-<h2>Learning Analytics</h2>
+```
+<h2>About Stack Burger Co.</h2>
 
 <p>
-  Google Analytics allows website owners to understand how
-  people interact with their websites.
+  Stack Burger Co. started with one simple idea:
+  make great burgers using fresh ingredients and
+  plenty of flavour.
 </p>
 
-<h3>What is GA4?</h3>
+<h3>Fresh Ingredients</h3>
 
 <p>
-  GA4 is Google's modern analytics platform. It uses an
-  event-based measurement model, meaning that interactions
-  such as clicks, page views and purchases can be recorded
-  as events.
+  Every burger is made to order with fresh vegetables,
+  quality ingredients and our signature sauces.
 </p>
 
-<h3>What is Google Tag Manager?</h3>
+<h3>Made Your Way</h3>
 
 <p>
-  Google Tag Manager allows marketers and developers to
-  manage tracking tags without having to modify website
-  code every time a new tracking requirement is introduced.
+  Choose your burger, add your favourite sides and
+  customise your meal exactly how you like it.
 </p>
 
-<h3>Why are events useful?</h3>
+<h3>Our Kitchen</h3>
 
 <p>
-  Events allow you to measure specific interactions on a
-  website. Examples include button clicks, form submissions,
-  downloads and purchases.
+  We believe good food doesn't need to be complicated.
+  Great ingredients, good cooking and a little creativity
+  are all you need.
+</p>
+```
+
+  </section>
+
+  <!-- LONG ARTICLE -->
+
+  <section id="article">
+
+```
+<h2>The Stack Burger Story</h2>
+
+<p>
+  Burgers have become one of the world's favourite
+  comfort foods. At Stack Burger Co., we wanted to
+  create a menu that combines classic flavours with
+  a few modern twists.
 </p>
 
-<h3>Practising with GTM</h3>
+<h3>Choosing the Right Burger</h3>
 
 <p>
-  A good way to learn GTM is to create different website
-  interactions and then attempt to capture each interaction
-  using triggers and variables.
-</p>
-
-<p>
-  Try scrolling through this article and compare what you
-  see in Google Analytics with the events generated by
-  Google Tag Manager.
-</p>
-
-<h3>More Practice</h3>
-
-<p>
-  Continue experimenting with different buttons, links,
-  forms and other website elements. Try creating your own
-  custom events and parameters.
-</p>
-
-<p>
-  Analytics becomes much easier to understand when you can
-  see the relationship between the website interaction,
-  the GTM trigger, the tag and the resulting GA4 event.
+  Whether you prefer a classic cheeseburger, a double
+  bacon burger, crispy chicken or a veggie option,
+  there's something for everyone.
 </p>
 
 <p>
-  This practice site is designed to give you a safe place
-  to experiment without worrying about breaking a real
-  website.
+  Our menu is designed to make choosing your next
+  burger easy. Start with your favourite patty and
+  then add the toppings and sauces you enjoy.
 </p>
 
-</section>
-
-<!-- FOOTER -->
-
-<footer>
+<h3>Our Burgers</h3>
 
 <p>
-  Analytics Practice Site
+  The Classic Stack is inspired by the traditional
+  American cheeseburger. The Double Bacon Stack is
+  designed for anyone looking for something bigger,
+  while the Spicy Chicken Burger brings some extra heat.
+</p>
+
+<h3>Why We Love Burgers</h3>
+
+<p>
+  Burgers are simple, customisable and easy to enjoy.
+  They work just as well for a quick lunch as they do
+  for a relaxed weekend meal with friends.
+</p>
+
+<h3>Keep Exploring</h3>
+
+<p>
+  Explore the menu, check out our offers and try
+  different combinations to find your perfect burger.
+</p>
+
+<p>
+  This website is also a practice environment for
+  learning Google Analytics and Google Tag Manager.
+  Every button, link and form provides an opportunity
+  to practise measuring user interactions.
+</p>
+```
+
+  </section>
+
+  <!-- FOOTER -->
+
+  <footer>
+
+```
+<p>
+  Stack Burger Co. — Fresh burgers, big flavour.
 </p>
 
 <a href="#home">
   Back to top
 </a>
+```
 
-</footer>
+  </footer>
 
-<!-- Simple demo JavaScript -->
+  <!-- Demo JavaScript -->
 
-<script> // Prevent the newsletter form from actually submitting document.getElementById('newsletter-form').addEventListener('submit', function(event) { event.preventDefault(); alert('Newsletter subscription submitted!'); }); // Prevent the contact form from actually submitting document.getElementById('contact-form').addEventListener('submit', function(event) { event.preventDefault(); alert('Contact form submitted!'); }); // Contact button scrolls to contact section document.getElementById('contact-btn').addEventListener('click', function() { document.getElementById('contact').scrollIntoView(); }); // CTA button scrolls to products document.getElementById('cta-button').addEventListener('click', function() { document.getElementById('products').scrollIntoView(); }); </script>
+  <script>
 
-</body> </html>
+    // Prevent newsletter form from actually submitting
+    document.getElementById('newsletter-form').addEventListener('submit', function(event) {
+      event.preventDefault();
+      alert('Thanks for subscribing!');
+    });
+
+
+    // Prevent contact form from actually submitting
+    document.getElementById('contact-form').addEventListener('submit', function(event) {
+      event.preventDefault();
+      alert('Thanks for contacting Stack Burger Co.!');
+    });
+
+
+    // Order button scrolls to menu
+    document.getElementById('order-button').addEventListener('click', function() {
+      document.getElementById('menu').scrollIntoView();
+    });
+
+
+    // Menu button scrolls to menu
+    document.getElementById('menu-button').addEventListener('click', function() {
+      document.getElementById('menu').scrollIntoView();
+    });
+
+  </script>
+
+</body>
+</html>
