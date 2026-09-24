@@ -1,37 +1,346 @@
 <!DOCTYPE html>
-<html>
-<head>
-  <title>Analytics Practice Site</title>
-</head>
- <!-- Google Tag Manager -->
-<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-})(window,document,'script','dataLayer','GTM-5FLKMNSN');</script>
+
+<html lang="en">
+
+<head> <meta charset="UTF-8"> <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Analytics Practice Site</title>
+
+<!-- Google Tag Manager -->
+
+<script> (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start': new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0], j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src= 'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f); })(window,document,'script','dataLayer','GTM-5FLKMNSN'); </script>
+
 <!-- End Google Tag Manager -->
-</script>
+
+<style> body { font-family: Arial, sans-serif; max-width: 900px; margin: 0 auto; padding: 30px; line-height: 1.6; } nav { margin-bottom: 30px; padding: 15px; background: #f2f2f2; } nav a { margin-right: 20px; } section { margin: 50px 0; padding: 25px; border: 1px solid #ddd; border-radius: 8px; } .product { border: 1px solid #ccc; padding: 20px; margin: 15px 0; border-radius: 8px; } button { padding: 10px 16px; cursor: pointer; } input, textarea { display: block; width: 100%; max-width: 500px; margin: 10px 0; padding: 10px; box-sizing: border-box; } </style>
+
+</head>
+
 <body>
+
 <!-- Google Tag Manager (noscript) -->
-<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5FLKMNSN"
-height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-<!-- End Google Tag Manager (noscript) -->
+
+<noscript> <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5FLKMNSN" height="0" width="0" style="display:none;visibility:hidden"> </iframe> </noscript> <!-- End Google Tag Manager (noscript) -->
+
+<!-- Navigation -->
+
+<nav id="main-navigation">
+
+<a href="#home">Home</a>
+
+<a href="#products">Products</a>
+
+<a href="#resources">Resources</a>
+
+<a href="#contact">Contact</a>
+
+</nav>
+
+<!-- HOME -->
+
+<section id="home">
+
 <h1>Analytics Practice Site</h1>
 
-<p>Welcome to my test website.</p>
+<p>
+  Welcome to my test website for learning Google Analytics 4
+  and Google Tag Manager.
+</p>
 
-<button id="contact-btn">Contact Me</button>
+<button id="contact-btn">
+  Contact Me
+</button>
 
 <br><br>
 
-<a href="https://www.google.com">Visit Google</a>
+<button id="cta-button">
+  Get Started
+</button>
+
+</section>
+
+<!-- EXTERNAL LINKS -->
+
+<section id="external-links">
+
+<h2>External Links</h2>
+
+<p>
+  Use these links to practise tracking outbound link clicks.
+</p>
+
+<a
+  id="google-link"
+  href="https://www.google.com">
+  Visit Google
+</a>
 
 <br><br>
 
-<form>
-  <input type="email" placeholder="Email">
-  <button type="submit">Subscribe</button>
+<a
+  id="youtube-link"
+  href="https://www.youtube.com">
+  Visit YouTube
+</a>
+
+<br><br>
+
+<a
+  id="github-link"
+  href="https://github.com">
+  Visit GitHub
+</a>
+
+</section>
+
+<!-- PRODUCTS -->
+
+<section id="products">
+
+<h2>Products</h2>
+
+<p>
+  These are fake products for practising ecommerce-style tracking.
+</p>
+
+
+<div class="product">
+
+  <h3>Google Analytics Course</h3>
+
+  <p>Learn the basics of GA4.</p>
+
+  <p><strong>£49</strong></p>
+
+  <button
+    id="ga-course-button"
+    class="product-button">
+    View Course
+  </button>
+
+  <button
+    id="ga-cart-button"
+    class="add-to-cart">
+    Add to Cart
+  </button>
+
+</div>
+
+
+<div class="product">
+
+  <h3>Google Tag Manager Course</h3>
+
+  <p>Learn how to create tags, triggers and variables.</p>
+
+  <p><strong>£79</strong></p>
+
+  <button
+    id="gtm-course-button"
+    class="product-button">
+    View Course
+  </button>
+
+  <button
+    id="gtm-cart-button"
+    class="add-to-cart">
+    Add to Cart
+  </button>
+
+</div>
+
+</section>
+
+<!-- RESOURCES -->
+
+<section id="resources">
+
+<h2>Resources</h2>
+
+<p>
+  Use this section to practise file-download tracking.
+</p>
+
+<a
+  id="pdf-download"
+  href="https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf"
+  target="_blank">
+  Download Practice PDF
+</a>
+
+</section>
+
+<!-- NEWSLETTER -->
+
+<section id="newsletter">
+
+<h2>Newsletter</h2>
+
+<p>
+  Practise tracking form submissions.
+</p>
+
+<form id="newsletter-form">
+
+  <label for="newsletter-email">
+    Email address
+  </label>
+
+  <input
+    id="newsletter-email"
+    type="email"
+    placeholder="you@example.com"
+    required>
+
+  <button
+    id="newsletter-submit"
+    type="submit">
+    Subscribe
+  </button>
+
 </form>
 
-</body>
-</html>
+</section>
+
+<!-- CONTACT FORM -->
+
+<section id="contact">
+
+<h2>Contact Me</h2>
+
+<form id="contact-form">
+
+  <label for="name">
+    Name
+  </label>
+
+  <input
+    id="name"
+    type="text"
+    placeholder="Your name"
+    required>
+
+
+  <label for="email">
+    Email
+  </label>
+
+  <input
+    id="email"
+    type="email"
+    placeholder="you@example.com"
+    required>
+
+
+  <label for="message">
+    Message
+  </label>
+
+  <textarea
+    id="message"
+    rows="5"
+    placeholder="Your message">
+  </textarea>
+
+
+  <button
+    id="contact-submit"
+    type="submit">
+    Send Message
+  </button>
+
+</form>
+
+</section>
+
+<!-- LONG ARTICLE -->
+
+<section id="article">
+
+<h2>Learning Analytics</h2>
+
+<p>
+  Google Analytics allows website owners to understand how
+  people interact with their websites.
+</p>
+
+<h3>What is GA4?</h3>
+
+<p>
+  GA4 is Google's modern analytics platform. It uses an
+  event-based measurement model, meaning that interactions
+  such as clicks, page views and purchases can be recorded
+  as events.
+</p>
+
+<h3>What is Google Tag Manager?</h3>
+
+<p>
+  Google Tag Manager allows marketers and developers to
+  manage tracking tags without having to modify website
+  code every time a new tracking requirement is introduced.
+</p>
+
+<h3>Why are events useful?</h3>
+
+<p>
+  Events allow you to measure specific interactions on a
+  website. Examples include button clicks, form submissions,
+  downloads and purchases.
+</p>
+
+<h3>Practising with GTM</h3>
+
+<p>
+  A good way to learn GTM is to create different website
+  interactions and then attempt to capture each interaction
+  using triggers and variables.
+</p>
+
+<p>
+  Try scrolling through this article and compare what you
+  see in Google Analytics with the events generated by
+  Google Tag Manager.
+</p>
+
+<h3>More Practice</h3>
+
+<p>
+  Continue experimenting with different buttons, links,
+  forms and other website elements. Try creating your own
+  custom events and parameters.
+</p>
+
+<p>
+  Analytics becomes much easier to understand when you can
+  see the relationship between the website interaction,
+  the GTM trigger, the tag and the resulting GA4 event.
+</p>
+
+<p>
+  This practice site is designed to give you a safe place
+  to experiment without worrying about breaking a real
+  website.
+</p>
+
+</section>
+
+<!-- FOOTER -->
+
+<footer>
+
+<p>
+  Analytics Practice Site
+</p>
+
+<a href="#home">
+  Back to top
+</a>
+
+</footer>
+
+<!-- Simple demo JavaScript -->
+
+<script> // Prevent the newsletter form from actually submitting document.getElementById('newsletter-form').addEventListener('submit', function(event) { event.preventDefault(); alert('Newsletter subscription submitted!'); }); // Prevent the contact form from actually submitting document.getElementById('contact-form').addEventListener('submit', function(event) { event.preventDefault(); alert('Contact form submitted!'); }); // Contact button scrolls to contact section document.getElementById('contact-btn').addEventListener('click', function() { document.getElementById('contact').scrollIntoView(); }); // CTA button scrolls to products document.getElementById('cta-button').addEventListener('click', function() { document.getElementById('products').scrollIntoView(); }); </script>
+
+</body> </html>
